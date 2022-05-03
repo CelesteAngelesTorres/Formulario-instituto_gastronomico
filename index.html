@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ingreso</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container"> <!--container-->      
+        <div class="hero">
+                <h1 id="title">Institución Gastronómica</h1><!--id="title"-->
+                <h2>Formulario de ingreso:</h2>
+                <p id="description">Insituto de Gastronomía agradece la confianza y el valor de ser parte de su crecimiento profesional</p> <!--id="description"-->
+        </div>    
+       
+            <!--Formulario-->
+        <div class="formulario">
+                <form  name="formulario" class="formulario__form" action="#" id="survey-form" method="GET"> <!--id="survey-form"-->
+            <p>
+                <label for="name" id="name-label">Nombre y apellido: <!--id="name-label"-->
+                <input class="input_dates" type="text" name="name" id="name" placeholder="Nombre completo" required>
+                </label>
+            </p> 
+            <p>
+                <label for="email" id="email-label">Email:</label> <!--id="email-label"-->
+                <input  class="input_dates" type="email" name="email" placeholder="ejemplo@ejemplo.com" id="email" required> <!--validacion de email e id="email" -->
+
+        
+            </p>
+            <p>  
+                <label for="number" id="number-label">Edad: <!--id="number-label"-->
+                <input  class="input_dates" type="number" name="number" id="number" required value="number"  placeholder="Edad" pattern="[0-130]" min="0" max="100">
+                </label> <!--id="number" y validacion de numero-->
+            </p>
+            <p>
+                <label for="pais" name="pais"> Seleccione su país: 
+                <select name="pais" required id="dropdown"> <!--id="dropdown"-->
+                    <option value="1">Argentina</option>
+                    <option value="2">España</option>
+                    <option value="3">México</option>
+                    <option value="4">Guatemala</option>
+                    <option value="5">Honduras</option>
+                    <option value="6">El Salvador</option>
+                    <option value="7">Venezuela</option>
+                    <option value="8">Colombia</option>
+                    <option value="9">Cuba</option>
+                    <option value="10">Bolivia</option>
+                    <option value="11">Ecuador</option>
+                    <option value="12">Uruguay</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label class="intereses"for="intereses" name="casilla__intereses">
+                    <p>Selecciona tus intereses sobre la Gastronomía:</p><br>
+                        <input type="checkbox"  value="checkbox" name="checkbox__1">Pastelería Profesional <br> <!--value and name-->
+                        <input type="checkbox" value="checkbox" name="checkbox__2">Gastronomía y alta cocina<br>   <!--value and name-->
+                        <input type="checkbox" value="checkbox" name="checkbox__3">Gastronomía vegetariana<br> <!--value and name-->
+                </label>
+            </p>
+            <p>
+                <label for="text-area" name="text-area"> Comentario: <br>
+                    <textarea class="textinput" type="text-area" name="text-area" rows="5" cols="50" placeholder=" Ingrese su comentario y/o consulta."></textarea>
+                </label> <!--textarea-->
+            </p>
+
+            <button type="submit" form="survey-form" value="Submit">Enviar</button>
+            </form>
+
+        </div> <!--finaliza el formulario-->
+  </div> <!--Finaliza container-->
+
+</body>
+
+</html>
